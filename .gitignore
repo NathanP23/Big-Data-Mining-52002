@@ -1,0 +1,11 @@
+# Ignore all "Week" folders
+Week*/*
+
+# Ignore all other folders
+*/
+
+# Allow MidTerm folder
+!MidTerm/
+
+# Allow the specific MidTerm file
+!MidTerm/MidTerm_52002_2024_25_2312.ipynb
