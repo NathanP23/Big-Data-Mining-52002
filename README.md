@@ -25,7 +25,7 @@ source venv/bin/activate  # Linux/Mac
 ### 3. Install Dependencies
 Install Jupyter and `ipykernel` in the virtual environment:
 ```bash
-pip install jupyter ipykernel
+pip install -r requirements.txt
 python -m ipykernel install --user --name=venv --display-name "Python (venv)"
 ```
 
@@ -87,4 +87,3 @@ python -m ipykernel install --user --name=venv --display-name "Python (venv)"
 
 ## License
 This project is for educational purposes. License details can be added here if applicable.
-```
