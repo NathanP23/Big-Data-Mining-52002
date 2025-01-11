@@ -87,4 +87,4 @@ python -m ipykernel install --user --name=venv --display-name "Python (venv)"
 ---
 
 ## License
-This project is for educational purposes. License details can be added here if applicable.
+This project is for educational purposes.
