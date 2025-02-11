@@ -1,0 +1,12 @@
+# Ignore everything by default
+/*
+
+# Ignore the virtual environment directory (common names: venv, myenv, .env)
+venv/
+
+# Ignore .DS_Store files (macOS specific)
+.DS_Store
+
+# Except the MidTerm folder
+!/MidTerm/
+!/Final/
