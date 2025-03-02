@@ -1,3 +1,4 @@
+```
 FINAL/
 │── First.py                 # Python script for counting gmap_id occurrences per rating
 │── Second.py                # Python script for aggregating results and mapping names
@@ -20,11 +21,4 @@ FINAL/
 │   │── rating_5_counts.txt      # gmap_id counts for rating = 5
 │   │
 │   │── final_gmap_ratings.csv   # Final processed data with total reviews & avg rating
-│
-└── logs/                    # Directory for SLURM logs
-    │── first_1.out              # Log for First.py processing rating_1.txt
-    │── first_2.out              # Log for First.py processing rating_2.txt
-    │── first_3.out              # Log for First.py processing rating_3.txt
-    │── first_4.out              # Log for First.py processing rating_4.txt
-    │── first_5.out              # Log for First.py processing rating_5.txt
-    │── second.out               # Log for Second.py processing all counts
+```
