@@ -97,6 +97,7 @@ echo "📊 Step 1 Jobs Submitted: ${STEP1_JOB_IDS[*]}"
 DEPENDENCY_STEP1=$(IFS=,; echo "${STEP1_JOB_IDS[*]}")
 
 # ===================== WAIT FOR STEP 1 TO FINISH =====================
+sleep 10
 wait_for_jobs "$DEPENDENCY_STEP1" "Step 1 (Splitting Reviews)"
 
 # ===================== STEP 2: COUNT gmap_id (PARALLEL JOBS) =====================
@@ -135,6 +136,7 @@ echo "📊 Step 2 Jobs Submitted: ${STEP2_JOB_IDS[*]}"
 DEPENDENCY_STEP2=$(IFS=,; echo "${STEP2_JOB_IDS[*]}")
 
 # ===================== WAIT FOR STEP 2 TO FINISH =====================
+sleep 10
 wait_for_jobs "$DEPENDENCY_STEP2" "Step 2 (Counting gmap_id)"
 
 # ===================== STEP 3: AGGREGATE RESULTS =====================
@@ -161,6 +163,7 @@ EOF
 echo "📊 Step 3 Jobs Submitted: $STEP3_JOB"
 
 # ===================== WAIT FOR STEP 3 TO FINISH =====================
+sleep 10
 wait_for_jobs "$STEP3_JOB" "Step 3 (Aggregation)"
 
 # ===================== PRINT TOP 3 BUSINESSES =====================
