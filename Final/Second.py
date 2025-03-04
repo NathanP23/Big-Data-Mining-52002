@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import json
 import sys
 import os
@@ -28,9 +29,9 @@ def aggregate_reviews(data_dir, meta_file, output_file):
 
         # Aggregate: Calculate total reviews & average rating per gmap_id
         grouped = all_data.groupby("gmap_id").agg(
-            total_reviews=pd.NamedAgg(column="count", aggfunc="sum"),
-            avg_rating=pd.NamedAgg(column="rating", aggfunc="mean")
-        ).reset_index()
+            total_reviews=("count", "sum"),
+            avg_rating=("rating", lambda x: np.average(x, weights=all_data.loc[x.index, 'count']))
+            ).reset_index()
 
         # Map business names
         grouped["name"] = grouped["gmap_id"].map(gmap_to_name)
