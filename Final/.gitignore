@@ -2,7 +2,7 @@
 *
 
 # Allow only specific files to be tracked
-!HomeExam_52002_2024_25_[ID]_NetworksStreamingUnix.ipynb
+!HomeExam_52002_2024_25_ID_NetworksStreamingUnix.ipynb
 !First.py
 !Second.py
 !README.md
