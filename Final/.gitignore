@@ -4,6 +4,8 @@
 # Allow only specific files to be tracked
 !HomeExam_52002_2024_25_ID_NetworksStreamingUnix.ipynb
 !HomeExam_52002_2024_25_ID_NetworksStreamingUnix.html
+!HomeExam_52002_2024_25_ID_Spark.ipynb
+!HomeExam_52002_2024_25_ID_Spark.html
 !First.py
 !Second.py
 !README.md
